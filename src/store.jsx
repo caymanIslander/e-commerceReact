@@ -34,7 +34,7 @@ function Store() {
     useEffect(() => {
         const fetchConversionRate = async () => {
             try {
-                const apiKey = '1b28c3da557464dfd2fb7beac4a3a33e';
+                const apiKey = '';
                 const base = 'USD';
                 const response = await axios.get(`http://api.exchangeratesapi.io/v1/latest?access_key=${apiKey}`);
                 setConversionRate(response.data.rates[selectedCurrency]);
