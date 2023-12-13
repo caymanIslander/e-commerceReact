@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  border: 0.1px solid white;
+  position: relative;
+  height: 5vw;
+  width: 100vw;
+  margin-top: 0;
+  overflow: hidden; /* Add this line */
+}
+
+.hamburger-menu,
+.main-header,
+.cart,
+.btn-submit {
+  padding: 1rem; /* Adjust padding as needed */
+}
+
+.list {
+  list-style: none;
+  flex: 1;
+}
+
+.shop {
+  text-align: center; /* Align text to center */
+}
+
+.cart {
+  text-align: right;
+}
+
+.btn-submit {
+  width: 50px;
+}
+
+.options-container {
+  flex-grow: 1;
+}
+
+.options-list {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+.options-list li {
+  padding: 0.2rem; /* Adjust padding as needed */
+  cursor: pointer; /* Add this line */
+}
+
+.sidebar {
+  width: 200px;
+  transition: opacity 0.3s ease;
+}
+
+.items-container {
+  border: 2px solid white;
+  width: fit-content;
+  padding: 2px;
+}
+
+.currency-list,
+.selected-currency {
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+}
+
+.selected-currency:hover {
+  cursor: pointer;
+}
+.currency-list {
+  list-style-type: none;
+  padding: 0;
+  overflow: auto;
+}
+
